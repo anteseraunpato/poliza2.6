@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="POSM" Folio="9006879" FormaPago="01" Moneda="MXN" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="97229" Fecha="2025-02-09T12:25:06" SubTotal="1496.56" Descuento="198.28" Total="1506.00" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" NoCertificado="00001000000710772185" Certificado="MIIGGjCCBAKgAwIBAgIUMDAwMDEwMDAwMDA3MTA3NzIxODUwDQYJKoZIhvcNAQELBQAwggGVMTUwMwYDVQQDDCxBQyBERUwgU0VSVklDSU8gREUgQURNSU5JU1RSQUNJT04gVFJJQlVUQVJJQTEuMCwGA1UECgwlU0VSVklDSU8gREUgQURNSU5JU1RSQUNJT04gVFJJQlVUQVJJQTEaMBgGA1UECwwRU0FULUlFUyBBdXRob3JpdHkxMjAwBgkqhkiG9w0BCQEWI3NlcnZpY2lvc2FsY29udHJpYnV5ZW50ZUBzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMQ0wCwYDVQQIDARDRE1YMRMwEQYDVQQHDApDVUFVSFRFTU9DMRUwEwYDVQQtEwxTQVQ5NzA3MDFOTjMxXDBaBgkqhkiG9w0BCQITTXJlc3BvbnNhYmxlOiBBRE1JTklTVFJBQ0lPTiBDRU5UUkFMIERFIFNFUlZJQ0lPUyBUUklCVVRBUklPUyBBTCBDT05UUklCVVlFTlRFMB4XDTI0MTAxNjE1MTI0NVoXDTI4MTAxNjE1MTI0NVowgdcxKDAmBgNVBAMTH09GRklDRSBERVBPVCBERSBNRVhJQ08gU0EgREUgQ1YxKDAmBgNVBCkTH09GRklDRSBERVBPVCBERSBNRVhJQ08gU0EgREUgQ1YxKDAmBgNVBAoTH09GRklDRSBERVBPVCBERSBNRVhJQ08gU0EgREUgQ1YxJTAjBgNVBC0THE9ETTk1MDMyNFYyQSAvIFNJUFI3MzAzMjVQRjYxHjAcBgNVBAUTFSAvIFNJUFI3MzAzMjVIREZMUkQwODEQMA4GA1UECxMHT0RNMjAyNDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIiLYk0u+ASOCzOYw80lm+Z2bT3p23BsIDSkQi81Bt9g31Ry0OdpZ7lyRTJGSu9wEKSTbFGtAwtsRyPv3NnHtcJ2/PoiW2Ea3bImHMUJ7bVkAYtVbd2WAErBFvYQ2OrkulC/GNQSFx7ensjPdsGC4rVC0e+sRyw2mTjAb8AZJOJ3Wzj9eYJ1c4w/uSJC9A4USvF1h9Gm8IpGJv0heIEPDkIJ5/8dKVMCcVd5xOvlSM/tGn/uqk/TQSD74VqtNCYj+wghLPbkPgyi6wLNx3sdvMk63Up5mpJhrkmqKHxdkxhgfn7iVEdr2Xlsen2Ay9+dGXFdorDpHkgco7A167uq4skCAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQELBQADggIBAGo5DHTbfO5NTeUawm6ydPo078HvxIjrqF2+/ckAF7CcJ1MXktnYhZycQYjTFt71h3BA/nQRL3sGeq8JL4vcGlb9ryk97ejq6x6CfZV9BBw9DXpr5ERf8rbgGUCCjtm0wBBCxGC9P23GR+Uch8JT7ZuJBPVgdbV56Z726sgLDJW1x27ruR8WfFvBDrvg8xXGd0K2o8xqMa9G+hmCk+cC8OT2yq+XTaOvskGwgRZqQgOuYxXPlTcpG80x+xJiirBigObhbsQXsNyUUZQTYOLA+yIv0/KgG9O76jwqOZ6Upu8GpopKMaCLzu/LEq4c6sq2Yyky1XVKrREpkQhuKH3XeRfGQQGoCM/NtrfBvYYAqzQ6vMzXS4lBr1t2pPw+4sMDqK3IhPNGGjzKx0gFsuB0ddYbigYJKcTMkGTSkWn31dkDaZT+RXJlHSPLC+K51pQYmRTapp65LnWAdQnwNSvT4K1eKqraJbrG6Aa9yi4yxG8Mix1n7gYB2fcEF2cxMYzVzX3M8tDWJgcrDoQJn+Tz8Si3vdZrCo/XYz3FikdZwmOG4mB+MfPZRwNCi/BNMsVCw0KSlHZHf6vX3uo5rqsFEvW91r8s9yj6jQb0JftvtKM154ACVsn0wPC0JYBO66PCrVjwruaHn/1HP3nTokmkpwaryIV+eB7t2JzCBoAQzxqa" Sello="hjeAFSwM3Wldw2S1bh5maO8EGf4iujbaKFFUOqu16kJkaKoRYYkXG0NtIJc6/Fumjmj1iiPa4X0xXtEFDT3fpgEwmF06xiY2kwPy5L9aDkogsDBq0X+49SiNeX1WBsE0BcgqReJ/gohEg0JWrte9KKGy86lbD8ZQUJB/YWm7gRs8DYJguh0a7Ij1LsD85ISZVtKXlAU97BIEKK1K+m+2rPjsMePM+BLtJoZmO1A3wf8xBAoe52ZF5wCmbLdExVuzKryta8+nJGh2Hdju6CWX/7/0R+Knj5xbfeOy95OvUK68qQ0q4rWzPwlJowjxgLFJgyChq0XXLQwuMoi9BN9ApA==" xmlns:OD="http://store.officedepot.com.mx/OnlineStore/CFD">
+  <cfdi:Emisor Rfc="ODM950324V2A" Nombre="OFFICE DEPOT DE MEXICO" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="SEP210905778" Nombre="SECRETARIA DE EDUCACION PUBLICA" DomicilioFiscalReceptor="06010" RegimenFiscalReceptor="603" UsoCFDI="G03" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="44103504" NoIdentificacion="100162322" ClaveUnidad="XPK" Unidad="PAQUETE" Descripcion="ARILLO MET ALFER 9/16 20PZ NG" ObjetoImp="02" Cantidad="3" ValorUnitario="145.6897" Importe="437.07">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" Base="437.07" TasaOCuota="0.160000" Importe="69.93" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="14111525" NoIdentificacion="000006369" ClaveUnidad="XBX" Unidad="CAJA" Descripcion="PAPEL OFFICE DEPOT CTA C/5000H, Fecha del pedimento:" ObjetoImp="02" Cantidad="1" ValorUnitario="1059.4899" Importe="1059.49" Descuento="198.28">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" Base="861.21" TasaOCuota="0.160000" Importe="137.79" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  51  1821  3000768" />
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="207.72">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" Base="1298.28" TasaOCuota="0.160000" Importe="207.72" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="76099D9D-6833-3047-B262-9091A36E850C" FechaTimbrado="2025-02-09T14:25:07" RfcProvCertif="SCD110105654" SelloCFD="hjeAFSwM3Wldw2S1bh5maO8EGf4iujbaKFFUOqu16kJkaKoRYYkXG0NtIJc6/Fumjmj1iiPa4X0xXtEFDT3fpgEwmF06xiY2kwPy5L9aDkogsDBq0X+49SiNeX1WBsE0BcgqReJ/gohEg0JWrte9KKGy86lbD8ZQUJB/YWm7gRs8DYJguh0a7Ij1LsD85ISZVtKXlAU97BIEKK1K+m+2rPjsMePM+BLtJoZmO1A3wf8xBAoe52ZF5wCmbLdExVuzKryta8+nJGh2Hdju6CWX/7/0R+Knj5xbfeOy95OvUK68qQ0q4rWzPwlJowjxgLFJgyChq0XXLQwuMoi9BN9ApA==" NoCertificadoSAT="00001000000702501858" SelloSAT="MntyckymZFqh+eAPRd75N+DRBGzt9B4sZuS+Y7G8XwdR0lMK41MXRKC0SD/L2DXckY5eKTtvzExoNJaii1Cy5RR7G62UBhwcVA0MHK5YUHUwj91PUFpzq+YL6M3qtyeDRsfzDBRl/a5cl+LFCXJjBNH/GH06l+8IBQwsjksRvSKP9kPfaJBIVxALeoI1tFyw+PIsDb2R5FlmPzJsUS0iL/EdFV2Oc71Nbckl0Bwe6gS4oRRBjVgJhKxFjDuIOjEzJ9irc8HSXWkr+4I0THdKCIsFxuAOzzSEk9oxXEHJ/qoJdwXKgB35i0Ey8uqTdxPxJhoYcMUILYnloO7CS4YwNA==" />
+  </cfdi:Complemento>
+  <cfdi:Addenda>
+    <OD:AddendaEmisor>
+      <OD:RequestForPayment version="1">
+        <OD:POS>
+          <OD:DatosGenerales ITU="2025020900423031000091995POSA" transaccionPOS="91995" tipoVenta="Venta Normal">
+            <OD:Tienda numero="423" telefono="9999877133" />
+            <OD:Caja numero="31" assoc="3" />
+          </OD:DatosGenerales>
+          <OD:Cliente folioFiscal="SEP210905778" />
+          <OD:MetodosPago>
+            <OD:MetodoPago tipo="Efectivo" montoPagado="1506.00" />
+          </OD:MetodosPago>
+          <OD:Impuestos>
+            <OD:Impuesto tipo="IVA 16%" subTotalPorTasa="1298.28" total="207.72" />
+          </OD:Impuestos>
+          <OD:Conceptos>
+            <OD:Concepto precioOriginal="169.00" sku="100162322" />
+            <OD:Concepto precioOriginal="1229.00" sku="6369" />
+          </OD:Conceptos>
+          <OD:DatosCliente>
+            <OD:DomicilioCliente calle="AVENIDA REPUBLICA DE ARGENTINA" noExterior="28" noInterior="OFICINA 1044" colonia="CENTRO (ÁREA 2)" municipio="CUAUHTÉMOC" estado="DIF" pais="MX" codigoPostal="06010" />
+          </OD:DatosCliente>
+        </OD:POS>
+      </OD:RequestForPayment>
+    </OD:AddendaEmisor>
+  </cfdi:Addenda>
+</cfdi:Comprobante>
