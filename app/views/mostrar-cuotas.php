@@ -56,13 +56,8 @@ while ($grupo = $result_grupos->fetch_assoc()) {
 <head>
     <meta charset="UTF-8" />
     <title>Cuotas por Grupo y Subgrupo</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h2 { margin-top: 40px; }
-        h3 { margin-top: 25px; }
-        table { border-collapse: collapse; width: 100%; margin-bottom: 30px; }
-        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-    </style>
+
+    <link rel="stylesheet" href="/public/assets/css/styles.css">
 </head>
 <body>
     <h1>Cuotas organizadas por Grupo y Subgrupo</h1>

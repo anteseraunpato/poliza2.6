@@ -12,7 +12,7 @@ $poliza = $_POST['poliza'] ?? '';
     <meta charset="UTF-8">
     <title>Buscar Póliza</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="/public/assets/css/styles.css">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
@@ -31,50 +31,6 @@ $poliza = $_POST['poliza'] ?? '';
             </div>
         </div>
     </header>
-
-    <style>
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #007bff;
-            color: white;
-            padding: 15px;
-            border-radius: 5px;
-            position: relative;
-        }
-        .header-right {
-            position: relative;
-        }
-        .menu-btn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-        }
-        .menu {
-            display: none;
-            position: absolute;
-            top: 50px;
-            right: 0;
-            background-color: white;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        .menu a {
-            display: block;
-            padding: 10px;
-            color: black;
-            text-decoration: none;
-            text-align: center;
-        }
-        .menu a:hover {
-            background-color: #007bff;
-            color: white;
-        }
-    </style>
 
     <script>
         function toggleMenu() {

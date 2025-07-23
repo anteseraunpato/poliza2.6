@@ -4,101 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de Pólizas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        .header {
-            display: flex;
-            align-items: center;
-            background-color: #007bff;
-            color: white;
-            padding: 15px;
-            border-radius: 5px;
-        }
-        .user-img {
-            width: 60px;
-            height: 60px;
-            border-radius: 60%;
-        }
-        .header-center {
-            flex: 1;
-            text-align: center;
-        }
-        .header-right {
-            display: flex;
-            justify-content: flex-end;
-        }
-        .main-content {
-            flex-grow: 1;
-            padding: 20px;
-        }
-        .message {
-            background-color: #28a745;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            border-radius: 5px;
-            display: none;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f0f0f0;
-        }
-        .table-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        input[type="checkbox"] {
-            margin: 0;
-            padding: 0;
-            width: 20px;
-            height: 20px;
-        }
-        .button-link {
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            background-color: #007bff;
-        }
-        .button-link:hover {
-            background-color: #0056b3;
-        }
-        #confirmacion {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+    <link rel="stylesheet" href="/public/assets/css/styles.css">
     <script>
         // Ocultar el mensaje después de 3 segundos
         setTimeout(() => {
@@ -123,32 +29,22 @@
 <body>
     <div class="container">
         <header class="header">
-            <div class="header-left">
-                <img src="imagen2.jpg" alt="Imagen de usuario" class="user-img">
-            </div>
             <div class="header-center">
                 <h1>GENERADOR DE PÓLIZAS</h1>
             </div>
-            <div class="header-right">
-                <a href="/index.php" class="button-link">
-                    <button>Regresar</button>
-                </a>
-            </div>
+<?php include __DIR__ . '/app/views/components/navbar.php'; ?>
         </header>
 
         <?php if (isset($_GET['message'])) { ?>
-            <div class="message" style="display: block;"><?= $_GET['message']; ?></div>
+            <div class="message" style="display: block;"><?= htmlspecialchars($_GET['message']); ?></div>
         <?php } ?>
 
         <div class="main-content">
             <?php
-            require_once 'conexion.php'; // Reemplaza la conexión local
-            ?>
+            require_once dirname(__DIR__, 2) . '/conexion.php';
 
             // Consulta SQL para seleccionar datos de la tabla "datos_xml"
             $sql = "SELECT fecha, total, subtotal, moneda, rfc_emisor, rfc_receptor, uuid, id FROM datos_xml";
-
-            // Ejecutar consulta
             $result = $conn->query($sql);
 
             // Verificar si hay resultados
@@ -166,25 +62,26 @@
                 echo "<th>UUID</th>";
                 echo "<th>Acciones</th>";
                 echo "</tr>";
+                
                 while($row = $result->fetch_assoc()) {
                     echo "<tr>";
-                    echo "<td>" . $row["fecha"] . "</td>";
-                    echo "<td>" . $row["total"] . "</td>";
-                    echo "<td>" . $row["subtotal"] . "</td>";
-                    echo "<td>" . $row["moneda"] . "</td>";
-                    echo "<td>" . $row["rfc_emisor"] . "</td>";
-                    echo "<td>" . $row["rfc_receptor"] . "</td>";
-                    echo "<td>" . $row["uuid"] . "</td>";
+                    echo "<td>" . htmlspecialchars($row["fecha"]) . "</td>";
+                    echo "<td>" . htmlspecialchars($row["total"]) . "</td>";
+                    echo "<td>" . htmlspecialchars($row["subtotal"]) . "</td>";
+                    echo "<td>" . htmlspecialchars($row["moneda"]) . "</td>";
+                    echo "<td>" . htmlspecialchars($row["rfc_emisor"]) . "</td>";
+                    echo "<td>" . htmlspecialchars($row["rfc_receptor"]) . "</td>";
+                    echo "<td>" . htmlspecialchars($row["uuid"]) . "</td>";
                     echo "<td>";
-                    echo "<a href='editar.php?id=" . $row['id'] . "' class='button-link'><button>Editar</button></a>";
-                    echo "<button class='btn-eliminar' data-uuid='" . $row["uuid"] . "'>Eliminar</button>";
+                    echo "<a href='editar.php?id=" . htmlspecialchars($row['id']) . "' class='button-link'><button>Editar</button></a>";
+                    echo "<button class='btn-eliminar' data-uuid='" . htmlspecialchars($row["uuid"]) . "'>Eliminar</button>";
                     echo "</td>";
                     echo "</tr>";
                 }
                 echo "</table>";
                 echo "</div>";
             } else {
-                echo "No hay resultados";
+                echo "<p>No hay resultados</p>";
             }
 
             // Cerrar conexión
@@ -204,7 +101,7 @@
                 // Mostrar el mensaje de confirmación
                 if (confirm("¿Estás seguro de eliminar este registro?")) {
                     // Redireccionar a la página de eliminación
-                    window.location.href = "eliminar.php?uuid=" + uuid;
+                    window.location.href = "eliminar.php?uuid=" + encodeURIComponent(uuid);
                 }
             });
         });
