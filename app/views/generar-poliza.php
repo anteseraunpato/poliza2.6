@@ -73,7 +73,7 @@
                     echo "<td>" . htmlspecialchars($row["rfc_receptor"]) . "</td>";
                     echo "<td>" . htmlspecialchars($row["uuid"]) . "</td>";
                     echo "<td>";
-                    echo "<a href='editar.php?id=" . htmlspecialchars($row['id']) . "' class='button-link'><button>Editar</button></a>";
+                    echo "<a href='/editar.php?id=" . htmlspecialchars($row['id']) . "' class='button-link'><button>Editar</button></a>";
                     echo "<button class='btn-eliminar' data-uuid='" . htmlspecialchars($row["uuid"]) . "'>Eliminar</button>";
                     echo "</td>";
                     echo "</tr>";
