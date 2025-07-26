@@ -5,26 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de Pólizas</title>
     <link rel="stylesheet" href="/public/assets/css/styles.css">
-    <script>
-        // Ocultar el mensaje después de 3 segundos
-        setTimeout(() => {
-            const message = document.querySelector('.message');
-            if (message) {
-                message.style.display = 'none';
-            }
-        }, 3000);
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .message {
+            background-color: #d4edda;
+            padding: 10px;
+            border: 1px solid #c3e6cb;
+            border-radius: 4px;
+            color: #155724;
+            margin: 10px auto;
+            text-align: center;
+            width: 90%;
+        }
 
-        // Agregar un botón para seleccionar todos los elementos
-        const selectAllButton = document.createElement("button");
-        selectAllButton.textContent = "Seleccionar todos";
-        selectAllButton.onclick = () => {
-            const checkboxes = document.querySelectorAll("input[type='checkbox']");
-            checkboxes.forEach((checkbox) => {
-                checkbox.checked = true;
-            });
-        };
-        document.body.appendChild(selectAllButton);
-    </script>
+        .button-link button {
+            padding: 5px 10px;
+            margin-right: 5px;
+        }
+
+        .btn-eliminar {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .btn-eliminar:hover {
+            background-color: #c0392b;
+        }
+
+        .select-all-btn {
+            margin: 15px auto;
+            display: block;
+            padding: 10px 20px;
+            background-color: #004d3b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .select-all-btn:hover {
+            background-color: #00664f;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -32,24 +58,24 @@
             <div class="header-center">
                 <h1>GENERADOR DE PÓLIZAS</h1>
             </div>
-<?php include __DIR__ . '/app/views/components/navbar.php'; ?>
+            <?php include __DIR__ . '/components/navbar.php'; ?>
         </header>
 
         <?php if (isset($_GET['message'])) { ?>
-            <div class="message" style="display: block;"><?= htmlspecialchars($_GET['message']); ?></div>
+            <div class="message"><?= htmlspecialchars($_GET['message']); ?></div>
         <?php } ?>
 
         <div class="main-content">
+
+            <button class="select-all-btn" onclick="seleccionarTodos()">Seleccionar todos</button>
+
             <?php
             require_once dirname(__DIR__, 2) . '/conexion.php';
 
-            // Consulta SQL para seleccionar datos de la tabla "datos_xml"
             $sql = "SELECT fecha, total, subtotal, moneda, rfc_emisor, rfc_receptor, uuid, id FROM datos_xml";
             $result = $conn->query($sql);
 
-            // Verificar si hay resultados
             if ($result->num_rows > 0) {
-                // Mostrar datos en un cuadro pequeño
                 echo "<div class='table-container'>";
                 echo "<table>";
                 echo "<tr>";
@@ -84,7 +110,6 @@
                 echo "<p>No hay resultados</p>";
             }
 
-            // Cerrar conexión
             $conn->close();
             ?>
         </div>
@@ -93,14 +118,29 @@
     <div id="confirmacion" style="display: none;">
         ¿Estás seguro de eliminar este registro?
     </div>
+
     <script>
-        // Agregar evento de clic a los botones de eliminar
+        // Ocultar mensaje de éxito
+        setTimeout(() => {
+            const message = document.querySelector('.message');
+            if (message) {
+                message.style.display = 'none';
+            }
+        }, 3000);
+
+        // Seleccionar todos los checkboxes
+        function seleccionarTodos() {
+            const checkboxes = document.querySelectorAll("input[type='checkbox']");
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = true;
+            });
+        }
+
+        // Confirmación de eliminación
         document.querySelectorAll(".btn-eliminar").forEach((button) => {
             button.addEventListener("click", () => {
                 const uuid = button.getAttribute("data-uuid");
-                // Mostrar el mensaje de confirmación
                 if (confirm("¿Estás seguro de eliminar este registro?")) {
-                    // Redireccionar a la página de eliminación
                     window.location.href = "eliminar.php?uuid=" + encodeURIComponent(uuid);
                 }
             });

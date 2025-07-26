@@ -99,20 +99,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <input type="text" name="nombre_alumno" value="<?= htmlspecialchars($alumno['nombre_alumno']) ?>" required>
 
     <label>Semestre:</label>
-    <input type="text" name="semestre" value="<?= htmlspecialchars($alumno['semestre']) ?>" required>
+    <select name="semestre" required>
+      <option value="1" <?= $alumno['semestre'] == '1' ? 'selected' : '' ?>>1</option>
+      <option value="2" <?= $alumno['semestre'] == '2' ? 'selected' : '' ?>>2</option>
+      <option value="3" <?= $alumno['semestre'] == '3' ? 'selected' : '' ?>>3</option>
+      <option value="4" <?= $alumno['semestre'] == '4' ? 'selected' : '' ?>>4</option>
+      <option value="5" <?= $alumno['semestre'] == '5' ? 'selected' : '' ?>>5</option>
+      <option value="6" <?= $alumno['semestre'] == '6' ? 'selected' : '' ?>>6</option>
+    </select>
 
     <label>Grupo:</label>
-    <input type="text" name="grupo" value="<?= htmlspecialchars($alumno['grupo']) ?>" required>
+    <select name="grupo" required>
+      <option value="A" <?= $alumno['grupo'] == 'A' ? 'selected' : '' ?>>A</option>
+      <option value="B" <?= $alumno['grupo'] == 'B' ? 'selected' : '' ?>>B</option>
+      <option value="C" <?= $alumno['grupo'] == 'C' ? 'selected' : '' ?>>C</option>
+      <option value="D" <?= $alumno['grupo'] == 'D' ? 'selected' : '' ?>>D</option>
+    </select>
 
-    <label>Especialidad:</label>
-    <!-- Cambia el input de especialidad por un select -->
     <label>Especialidad:</label>
     <select name="especialidad" required>
       <option value="SAETA" <?= $alumno['especialidad'] == 'SAETA' ? 'selected' : '' ?>>SAETA</option>
       <option value="SYM" <?= $alumno['especialidad'] == 'SYM' ? 'selected' : '' ?>>SYM</option>
       <option value="AGROP" <?= $alumno['especialidad'] == 'AGROP' ? 'selected' : '' ?>>AGROP</option>
     </select>
-
     <button type="submit">Actualizar Alumno</button>
     <a href="lista-alumno.php" style="margin-left: 10px;">Cancelar</a>
   </form>

@@ -5,6 +5,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Lista de Alumnos</title>
+  <link rel="stylesheet" href="/public/assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     body { font-family: Arial, sans-serif; padding: 20px; background-color: #f5f5f5; }
     table { width: 100%; border-collapse: collapse; background: white; margin-top: 20px; }
@@ -46,13 +48,29 @@
     .btn-eliminar:hover {
       background-color: #c0392b;
     }
+
+    .header {
+      background-color: #004d3b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+    }
   </style>
-
-
 </head>
 <body>
 
-  <h2>Lista de Alumnos Registrados</h2>
+  <header class="header">
+    <div class="header-center">
+      <h1>GENERADOR DE PÓLIZAS</h1>
+    </div>
+    <?php include __DIR__ . '/../../views/components/navbar.php'; ?>
+  </header>
+
+  <h2 style="text-align: center;">Lista de Alumnos Registrados</h2>
 
   <table>
     <thead>

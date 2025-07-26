@@ -93,7 +93,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     </style>
 </head>
-<body> 
+<body>
+
+    <?php include __DIR__ . '/components/navbar.php'; ?>
+
     <div class="container">
         <div class="register-box">
             <h2>Crear Cuenta</h2>
@@ -115,18 +118,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <input type="password" placeholder="Confirmar Contraseña" name="confirm_password" required minlength="6" id="confirm_password">
                 </div>
 
-                <div class="textbox terms">
-                    <label>
-                        <input type="checkbox" name="terms" required>
-                        Acepto los <a href="#" target="_blank">términos y condiciones</a>
-                    </label>
-                </div>
-
                 <input type="submit" class="btn-submit" value="Registrarse">
             </form>
-            <div class="options">
-                ¿Ya tienes cuenta? <a href="login.php">Iniciar Sesión</a>
-            </div>
+           
         </div>
     </div>
 
@@ -143,9 +137,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             return true;
         });
-
-        // Mostrar/ocultar contraseña (opcional)
-        // Puedes añadir iconos de ojo para mostrar/ocultar contraseña si lo deseas
     </script>
 </body>
 </html>
