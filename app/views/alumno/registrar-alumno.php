@@ -8,54 +8,7 @@
     <title>Agregar Alumno</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/public/assets/css/styles.css">
-    <style>
-        body {
-            font-family: Arial;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-
-        form {
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            max-width: 500px;
-            margin: auto;
-        }
-
-        input,
-        select {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            background-color: #004d3b;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        button:hover {
-            background-color: #00664f;
-        }
-
-        .header {
-            background-color: #004d3b;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .header h1 {
-            margin: 0;
-        }
-    </style>
+   <link rel="stylesheet" href="/public/assets/css/styles.css">
 </head>
 
 <body>

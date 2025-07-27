@@ -6,51 +6,7 @@
     <title>Generador de Pólizas</title>
     <link rel="stylesheet" href="/public/assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .message {
-            background-color: #d4edda;
-            padding: 10px;
-            border: 1px solid #c3e6cb;
-            border-radius: 4px;
-            color: #155724;
-            margin: 10px auto;
-            text-align: center;
-            width: 90%;
-        }
-
-        .button-link button {
-            padding: 5px 10px;
-            margin-right: 5px;
-        }
-
-        .btn-eliminar {
-            background-color: #e74c3c;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-
-        .btn-eliminar:hover {
-            background-color: #c0392b;
-        }
-
-        .select-all-btn {
-            margin: 15px auto;
-            display: block;
-            padding: 10px 20px;
-            background-color: #004d3b;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .select-all-btn:hover {
-            background-color: #00664f;
-        }
-    </style>
+    <link rel="stylesheet" href="/public/assets/css/styles.css">
 </head>
 <body>
     <div class="container">

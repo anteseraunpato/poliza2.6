@@ -58,6 +58,7 @@ unset($_SESSION['mensaje'], $_SESSION['error']);
     <title>Gestión de Cuotas</title>
 <link rel="stylesheet" href="/public/assets/css/styles.css">
 </head>
+<?php include __DIR__ . '/components/navbar.php'; ?>
 <body>
 
 <h2>Lista de Cuotas</h2>

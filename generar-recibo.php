@@ -51,19 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['alumno_id'], $_POST['
     <meta charset="UTF-8">
     <title>Generar Recibo de Pago</title>
     <link rel="stylesheet" href="/public/assets/css/styles.css">
-    <style>
-        .form-container { max-width: 800px; margin: 20px auto; padding: 20px; }
-        .form-group { margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; font-weight: bold; }
-        select, input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
-        .btn-generar { 
-            background-color: #004d3b; color: white; padding: 12px 20px; 
-            border: none; border-radius: 4px; cursor: pointer; font-size: 16px; 
-        }
-        .vista-previa { margin-top: 30px; border: 1px solid #ddd; padding: 20px; }
-        .acciones { margin-top: 20px; display: flex; gap: 10px; }
-        .btn-pdf { background-color: #f44336; color: white; padding: 10px 15px; text-decoration: none; }
-    </style>
+    <link rel="stylesheet" href="/public/assets/css/styles.css">
 </head>
 <body>
     <?php include __DIR__ . '/app/views/components/navbar.php'; ?>

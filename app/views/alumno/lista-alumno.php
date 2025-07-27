@@ -7,59 +7,7 @@
   <title>Lista de Alumnos</title>
   <link rel="stylesheet" href="/public/assets/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f5f5f5; }
-    table { width: 100%; border-collapse: collapse; background: white; margin-top: 20px; }
-    th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
-    th { background-color: #004d3b; color: white; }
-    tr:hover { background-color: #f1f1f1; }
-    h2 { color: #004d3b; }
-    .btn-volver {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 15px;
-      background-color: #00b389;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .btn-volver:hover {
-      background-color: #009f7a;
-    }
-    .btn-accion {
-      padding: 5px 10px;
-      margin: 0 2px;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-      color: white;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .btn-editar {
-      background-color: #3498db;
-    }
-    .btn-editar:hover {
-      background-color: #2980b9;
-    }
-    .btn-eliminar {
-      background-color: #e74c3c;
-    }
-    .btn-eliminar:hover {
-      background-color: #c0392b;
-    }
-
-    .header {
-      background-color: #004d3b;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .header h1 {
-      margin: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="/public/assets/css/styles.css">
 </head>
 <body>
 

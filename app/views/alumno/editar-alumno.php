@@ -46,43 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
   <meta charset="UTF-8">
   <title>Editar Alumno</title>
-  <style>
-    body {
-      font-family: Arial;
-      padding: 20px;
-      background-color: #f5f5f5;
-    }
-
-    form {
-      background: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    input,
-    select {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    button {
-      background-color: #004d3b;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    button:hover {
-      background-color: #00664f;
-    }
-  </style>
+  <link rel="stylesheet" href="/public/assets/css/styles.css">
 </head>
 
 <body>
