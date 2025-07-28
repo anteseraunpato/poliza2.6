@@ -46,43 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
   <meta charset="UTF-8">
   <title>Editar Alumno</title>
-  <style>
-    body {
-      font-family: Arial;
-      padding: 20px;
-      background-color: #f5f5f5;
-    }
-
-    form {
-      background: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    input,
-    select {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    button {
-      background-color: #004d3b;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    button:hover {
-      background-color: #00664f;
-    }
-  </style>
+  <link rel="stylesheet" href="/public/assets/css/styles.css">
 </head>
 
 <body>
@@ -99,20 +63,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <input type="text" name="nombre_alumno" value="<?= htmlspecialchars($alumno['nombre_alumno']) ?>" required>
 
     <label>Semestre:</label>
-    <input type="text" name="semestre" value="<?= htmlspecialchars($alumno['semestre']) ?>" required>
+    <select name="semestre" required>
+      <option value="1" <?= $alumno['semestre'] == '1' ? 'selected' : '' ?>>1</option>
+      <option value="2" <?= $alumno['semestre'] == '2' ? 'selected' : '' ?>>2</option>
+      <option value="3" <?= $alumno['semestre'] == '3' ? 'selected' : '' ?>>3</option>
+      <option value="4" <?= $alumno['semestre'] == '4' ? 'selected' : '' ?>>4</option>
+      <option value="5" <?= $alumno['semestre'] == '5' ? 'selected' : '' ?>>5</option>
+      <option value="6" <?= $alumno['semestre'] == '6' ? 'selected' : '' ?>>6</option>
+    </select>
 
     <label>Grupo:</label>
-    <input type="text" name="grupo" value="<?= htmlspecialchars($alumno['grupo']) ?>" required>
+    <select name="grupo" required>
+      <option value="A" <?= $alumno['grupo'] == 'A' ? 'selected' : '' ?>>A</option>
+      <option value="B" <?= $alumno['grupo'] == 'B' ? 'selected' : '' ?>>B</option>
+      <option value="C" <?= $alumno['grupo'] == 'C' ? 'selected' : '' ?>>C</option>
+      <option value="D" <?= $alumno['grupo'] == 'D' ? 'selected' : '' ?>>D</option>
+    </select>
 
-    <label>Especialidad:</label>
-    <!-- Cambia el input de especialidad por un select -->
     <label>Especialidad:</label>
     <select name="especialidad" required>
       <option value="SAETA" <?= $alumno['especialidad'] == 'SAETA' ? 'selected' : '' ?>>SAETA</option>
       <option value="SYM" <?= $alumno['especialidad'] == 'SYM' ? 'selected' : '' ?>>SYM</option>
       <option value="AGROP" <?= $alumno['especialidad'] == 'AGROP' ? 'selected' : '' ?>>AGROP</option>
     </select>
-
     <button type="submit">Actualizar Alumno</button>
     <a href="lista-alumno.php" style="margin-left: 10px;">Cancelar</a>
   </form>

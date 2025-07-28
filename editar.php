@@ -22,17 +22,7 @@ if ($result->num_rows > 0) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Póliza</title>
-        <style>
-            body { font-family: Arial, sans-serif; }
-            .container { width: 80%; margin: auto; border: 2px solid black; padding: 10px; }
-            .header, .footer { text-align: center; font-weight: bold; }
-            .section { border-top: 1px solid black; padding: 10px; }
-            table { width: 100%; border-collapse: collapse; margin-top: 10px; background-color: white; }
-            table, th, td { border: 1px solid black; text-align: center; }
-            th { background-color: #0074D9; color: white; }
-            td { padding: 5px; }
-            select { width: 100%; height: 30px; }
-        </style>
+        <link rel="stylesheet" href="/public/assets/css/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             $(document).ready(function() {

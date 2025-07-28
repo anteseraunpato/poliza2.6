@@ -14,8 +14,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Cuenta</title>
     <link rel="stylesheet" href="/public/assets/css/styles.css">
+    <link rel="stylesheet" href="/public/assets/css/styles.css">
 </head>
-<body> 
+<body>
+
+    
+
     <div class="container">
         <div class="register-box">
             <h2>Crear Cuenta</h2>
@@ -39,9 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <input type="submit" class="btn-submit" value="Registrarse">
             </form>
-            <div class="options">
-                ¿Ya tienes cuenta? <a href="login.php">Iniciar Sesión</a>
-            </div>
+           
         </div>
     </div>
 
@@ -58,9 +60,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             return true;
         });
-
-        // Mostrar/ocultar contraseña (opcional)
-        // Puedes añadir iconos de ojo para mostrar/ocultar contraseña si lo deseas
     </script>
 </body>
 </html>
