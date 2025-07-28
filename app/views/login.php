@@ -1,5 +1,6 @@
 <?php
-session_start(); // Añadido para manejo de sesiones
+require_once __DIR__ . '/../../config.php'; // o ajustar según ubicación
+require_once BASE_PATH . '/app/middleware/guest.php'; // <-- Verifica que no haya sesión activa
 require_once __DIR__ . '/../controllers/AuthController.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -35,11 +36,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="error"><?php echo htmlspecialchars($_SESSION['error_message']); ?></div>
                 <?php unset($_SESSION['error_message']); ?>
             <?php } ?>
-            
-            <div class="options">
-                <a href="registrar-usuario.php">Crear Cuenta</a> | 
-                <a href="recuperar-contrasena.php">¿Olvidaste tu Contraseña?</a>
-            </div>
         </div>
     </div>
 </body>

@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/config.php'; // o ajustar según ubicación
+require_once BASE_PATH . '/app/middleware/auth.php'; // <-- Verifica que haya sesión activa
 require_once 'conexion.php'; // Reemplaza la conexión local
  
   // Procesar la subida del XML
