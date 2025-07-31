@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "tu_password";
-$dbname = "facturas";
+$password = "12345";
+$dbname = "poliza";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

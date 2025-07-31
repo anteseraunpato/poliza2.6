@@ -85,20 +85,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['alumno_id'], $_POST['
                     </select>
                 </div>
                 
-                <button type="submit" class="btn-generar">Generar Vista Previa</button>
+                <button type="submit" class="btn-generar">Guardar datos</button>
             </form>
             
             <?php if (isset($mostrar_vista_previa) && $mostrar_vista_previa): ?>
-                <div class="vista-previa">
-                    <h2>Vista Previa del Recibo</h2>
-                    <p>Revise la información antes de generar el PDF.</p>
-                    
-                    <!-- Incrustar la plantilla del recibo -->
-                    <?php include __DIR__ . '/recibo-template.php'; ?>
-                    
+                <div class="vista-previa">                   
                     <!-- Botón para generar PDF -->
                     <div class="acciones">
-                        <form action="generar_pdf.php" method="POST" style="display: inline;">
+                        <form action="generar_recibo_pdf.php" method="POST" style="display: inline;">
                             <input type="hidden" name="alumno_id" value="<?= $alumno_id ?>">
                             <input type="hidden" name="cuota_id" value="<?= $cuota_id ?>">
                             <button type="submit" class="btn-pdf">Descargar PDF</button>
@@ -111,3 +105,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['alumno_id'], $_POST['
     </div>
 </body>
 </html>
+
+

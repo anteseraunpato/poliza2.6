@@ -45,11 +45,6 @@ $html = '
 <html>
 <head>
     <style>
-        @page {
-            size: Letter;
-            margin: 0;
-        }
-
         body {
             font-family: Arial, sans-serif;
             font-size: 9px;
@@ -182,7 +177,7 @@ $html = '
                 <div>UR<br><strong>610</strong></div>
                 <div>RECIBO No.<br><strong>' . $numero_recibo . '</strong></div>
                 <div>FECHA<br><strong>' . $fecha_actual . '</strong></div>
-                <div>ENTIDAD FEDERATIVA<br><strong>OAXACA</strong></div>
+                <div>ENTIDAD FEDERATIVA<br><strong>YUCATÁN</strong></div>
             </div>
         </div>
 

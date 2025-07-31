@@ -22,7 +22,6 @@ if ($result->num_rows > 0) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Póliza</title>
-        <link rel="stylesheet" href="/public/assets/css/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             $(document).ready(function() {
@@ -40,6 +39,127 @@ if ($result->num_rows > 0) {
             });
         </script>
     </head>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      border: 1px solid #ccc;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 60px;
+      margin-right: 10px;
+    }
+    .logo-text {
+      font-size: 10px;
+      color: #666;
+    }
+    .policy-number {
+      border: 1px solid black;
+      padding: 5px;
+      text-align: center;
+    }
+    .date {
+      text-align: right;
+      padding: 10px;
+      font-size: 12px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .recipient {
+      margin-bottom: 100px;
+    }
+    .amount {
+      text-align: right;
+      font-weight: bold;
+    }
+    .connectors {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      pointer-events: none;
+    }
+    .connector {
+      position: absolute;
+      background-color: #000;
+      width: 0px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .connector-left {
+      left: -5px;
+      top: 100px;
+    }
+    .connector-right {
+      right: -5px;
+      top: 100px;
+    }
+    .section {
+      margin: 10px 0 20px 0;
+      border-bottom: 1px solid #ccc;
+    }
+    .section-header {
+      background-color: #89cff0;
+      padding: 5px;
+      font-weight: bold;
+    }
+    .section-content {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #ccc;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 5px;
+      text-align: left;
+    }
+    th {
+      background-color: #89cff0;
+      padding: 5px;
+      font-weight: bold;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      flex-direction: row;
+    }
+    .footer-section {
+      text-align: center;
+      width: 33.33%;
+      padding: 5px;
+      border: 1px solid black;
+    }
+  </style>
+
     <body>
         <div class="container">
             <div class="header">

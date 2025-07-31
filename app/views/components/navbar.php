@@ -17,10 +17,10 @@
             <a href="/app/views/registrar-usuario.php" class="navbar-link">
                 <i class="fas fa-user-plus"></i> Registro de usuarios
             </a>
-            <a href="/app/views/cuotas.php" class="navbar-link link">
-                <i class="fa-solid fa-money-bill"></i> Cuotas
+            <a href="/generar-recibo.php" class="navbar-link link">
+                <i class="fa-solid fa-money-bill"></i> Generar Recibo
             </a>
-            <a href="/app/views/login.php" class="navbar-link logout">
+            <a href="/logout.php" class="navbar-link logout">
                 <i class="fas fa-sign-out-alt"></i> Cerrar sesión
             </a>
         </div>
